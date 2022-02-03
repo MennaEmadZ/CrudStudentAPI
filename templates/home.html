@@ -1,0 +1,33 @@
+{%extends 'index.html'%}
+{%block title%}
+ home
+{%endblock%}
+<h1>{{req.session.username}}</h1>
+{%block content%}
+      <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+            {%for student in students %}
+              <tr>
+                <th scope="row">{{student.id}}</th>
+                <td>{{student.username}}</td>
+                <td>{{student.email}}</td>
+
+                <td>
+
+                    <a  href="{% url 'delete' student.id %}" class="btn-danger p-2 m-2">
+                      delete
+                    </a>
+                </td>
+              </tr>
+            {%endfor%}
+            </tbody>
+          </table>
+{%endblock%}

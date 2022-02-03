@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {%block title%}
+        index page
+        {%endblock%}
+    </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://kit.fontawesome.com/4d391133a0.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/7ee71d2343.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light my-0 ">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                style="background-color:#f4b942; color:#fff5eb ; ">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="main-nav">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-6 col-sm-6 justify-content-start text-start mt-2 ">
+                            <ul class="navbar-nav navbar-start ">
+                                <li class="nav-item ">
+                                    <a class="navbar-brand" href="/home" active>AMAZON</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/aboutus">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/contactus">CONTACT US</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link " href="/insertintake">INSERT INTACK</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="/listintake">LIST INTACK</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-sm-6 justify-content-end text-end ">
+                            <ul class="navbar-nav navbar-end ">
+
+                                <li class="nav-item text-primary ">
+                                    <a class="nav-link" href="/login"><i class="bi bi-person-fill h1"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="/register"><i class="bi bi-person-plus h1"></i></a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link " href="/logout"><i class="bi bi-box-arrow-right h1"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    {%block content%}
+    index content
+    {%endblock%}
+
+    <footer class=" bg-light py-3">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 col-sm-6 text-start  pt-3   ">
+                    <small>&copy;MennaEmadZ</small>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 text-start  pt-3   ">
+                    <div class="text-right col px-5">
+                        <a href="https://www.facebook.com/menna.emad.6" target="_blank"> <i
+                                class="bi bi-facebook py-3 px-3"></i></a>
+                        <a href="https://www.linkedin.com/in/menna-emad-z/" target="_blank"> <i
+                                class="bi bi-linkedin py-3  px-3"></i></a>
+                        <a href="https://instagram.com/menna.emad.z?utm_medium=copy_link" target="_blank"> <i
+                                class="bi bi-instagram py-3 px-3"></i></a>
+                        <a href="https://github.com/MennaEmadZ" target="_blank"> <i
+                                class="bi bi-github py-3 px-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

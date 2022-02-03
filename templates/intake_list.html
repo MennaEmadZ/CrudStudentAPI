@@ -1,0 +1,26 @@
+{%extends 'index.html'%}
+{%block title%}
+ home
+{%endblock%}
+{%block content%}
+      <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+            {%for student in object_list%}
+              <tr>
+                <th scope="row">{{student.id}}</th>
+                <td>{{student.intakeName}}</td>
+                <td>{{student.startDate}}</td>
+                <td>{{student.endDate}}</td>
+              </tr>
+            {%endfor%}
+            </tbody>
+          </table>
+{%endblock%}
